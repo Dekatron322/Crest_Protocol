@@ -97,7 +97,7 @@ def ResultView(request, domain_name):
 		if name_address == "0x0000000000000000000000000000000000000000":
 			available = True
 		elif name_address == "0xA67f0392a9A70dEB2A0cf8Ae36017B20A8d11756":
-		    available = None
+			available = None
 		else:
 			available = False
 		
@@ -152,22 +152,22 @@ def TransferView(request):
 
 
 def Transfer2View(request, domain_name):
-    if request.method == "POST":
-        pass
+	if request.method == "POST":
+		pass
 
-    else:
+	else:
 
-        context = {"domain_name": domain_name,}
-        return render(request, "main/transfer2.html", context )	
+		context = {"domain_name": domain_name,}
+		return render(request, "main/transfer2.html", context )	
 
 def RegisteredView(request):
-    if request.method == "POST":
-        pass
+	if request.method == "POST":
+		pass
 
-    else:
+	else:
 
-        context = {}
-        return render(request, "main/registered.html", context )	
+		context = {}
+		return render(request, "main/registered.html", context )	
 
 def DocsView(request):
 
